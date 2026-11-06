@@ -91,3 +91,22 @@ body {
   background-color: white;
   display: none;
 }
+
+#footer {
+  margin-top: 25px;
+  padding: 12px 20px;
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: #111;
+  box-shadow: 0 0 10px red;
+  text-align: center;
+  font-size: 14px;
+}
+
+#footer p {
+  margin: 0;
+}
+
+#footer strong {
+  color: white;
+}
