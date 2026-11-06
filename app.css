@@ -1,3 +1,46 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'PHOBIA NIGHT', sans-serif;                                     
+  background-color: black;
+  color: red;
+}
+
+#panel {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+#panel label {
+  display: flex;
+  flex-direction: column;
+}
+
+#add-taylor, #remove-taylor {
+  width: 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#play-button {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: red;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 #game-area {
   width: 500px;
   height: 500px;
@@ -7,24 +50,12 @@
   box-shadow: 0 0 15px red;
 }
 
-/* Con esto centramos el area de juego en la pantalla */
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-
-  background-color: black;
-  color: red;
-
-}
-
 .character {
   width: 50px;
   height: 50px;
   position: absolute;
+  left: 0;
+  top: 0;
 }
 
 #player {
@@ -34,12 +65,29 @@ body {
   border-radius: 50%;
 }
 
-#taylor {
+.taylor {
   background-image: url('taylor.jpg');
   background-size: cover;
   background-position: center;
-
   border-radius: 5px;
-
   box-shadow: 0 0 12px red;
+}
+
+.bala {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: lime;
+  border-radius: 50%;
+  box-shadow: 0 0 6px lime;
+}
+
+#goal {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: white;
+  display: none;
 }
